@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='utf-8'?>
+<interface>
+  <object class="ttk.Frame" id="Frame_1">
+    <property name="class_">Main_Frame</property>
+    <property name="height">200</property>
+    <property name="takefocus">false</property>
+    <property name="width">200</property>
+    <layout>
+      <property name="column">0</property>
+      <property name="propagate">True</property>
+      <property name="row">0</property>
+    </layout>
+    <child>
+      <object class="ttk.Entry" id="Entry_2">
+        <property name="cursor">bogosity</property>
+        <property name="font">TkHeadingFont</property>
+        <property name="justify">center</property>
+        <property name="text" translatable="yes">Pages #</property>
+        <property name="width">10</property>
+        <layout>
+          <property name="column">0</property>
+          <property name="propagate">True</property>
+          <property name="row">1</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Button" id="Button_1">
+        <property name="command">print_event</property>
+        <property name="text" translatable="yes">Save Data</property>
+        <layout>
+          <property name="column">0</property>
+          <property name="propagate">True</property>
+          <property name="row">2</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Entry" id="Entry_1">
+        <property name="cursor">arrow</property>
+        <property name="exportselection">false</property>
+        <property name="justify">center</property>
+        <property name="state">normal</property>
+        <property name="takefocus">true</property>
+        <property name="text" translatable="yes">Content to Search
+</property>
+        <property name="textvariable">string:value_print</property>
+        <property name="validate">focus</property>
+        <bind add="" handler="callback" sequence="&lt;1&gt;" />
+        <layout>
+          <property name="column">0</property>
+          <property name="propagate">True</property>
+          <property name="row">0</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Label" id="Label_1">
+        <property name="anchor">w</property>
+        <property name="compound">top</property>
+        <property name="cursor">arrow</property>
+        <property name="justify">center</property>
+        <property name="text" translatable="yes">Click to save data</property>
+        <layout>
+          <property name="column">0</property>
+          <property name="propagate">True</property>
+          <property name="row">3</property>
+        </layout>
+      </object>
+    </child>
+  </object>
+</interface>
